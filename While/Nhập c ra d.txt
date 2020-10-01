@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Input {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		char c = (char)(sc.next().charAt(0)+1);
+		System.out.println(c);
+	}
+}
+
+/* Bạn hãy viết chương trình nhập vào một ký tự từ bàn phím và thực hiện hiển thị ký tự tiếp trong bảng bảng chữ cái của ký tự đó ra màn hình.
+
+Ví dụ nếu bạn nhập
+
+c
+
+thì chương trình sẽ hiển thị ra
+
+d
+
+Giải thích: 'd' là ký tự tiếp theo của 'c' trong bảng chữ cái.
+
+Lý thuyết
+
+Lớp Scanner không cung cấp phương thức để nhập dữ liệu cho biến kiểu char, thay vào đó bạn phải nhập dữ liệu cho kiểu String và lấy ra ký tự đầu tiên trong String đó. Ví dụ:
+
+import java.util.Scanner;
+
+public class Input {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		char c = sc.next().charAt(0);
+		System.out.println("c = " + c);
+	}
+}
+
+Nếu bạn nhập:
+
+x
+
+thì màn hình sẽ hiển thị ra:
+
+c = x
+
+Đọc tới đây bạn đã biết cách nhập dữ liệu cho biến kiểu char, hãy quay lại phần bài tập và làm thử.
+
+*/

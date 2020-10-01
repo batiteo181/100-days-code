@@ -1,0 +1,45 @@
+//Bài tập
+
+//Bạn hãy viết chương trình nhập từ bàn phím hai số nguyên a và b. Sau đó hiển thị ra màn hình các số từ a tới b mà chia hết cho cả 3 và 5.
+
+//Ví dụ nếu nhập a = 1, b = 50 thì chương trình sẽ hiển thị ra màn hình:
+
+//15 30 45
+
+//Nếu bạn chưa làm được bài này thì có thể xem hướng dẫn ở bên dưới.
+//Hướng dẫn
+
+//Code mẫu sử dụng vòng lặp while:
+
+import java.util.Scanner;
+
+public class Loop {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		while (a <= b) {
+			if (a % 3 == 0 && a % 5 == 0) {
+				System.out.print(a + " ");
+			}
+			a++;
+		}
+	}
+}
+
+//Code mẫu sử dụng vòng lặp for:
+
+import java.util.Scanner;
+
+public class Loop {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		for (int i = a; i <= b; i++) {
+			if (i % 3 == 0 && i % 5 == 0) {
+				System.out.print(i + " ");
+			}
+		}
+	}
+}
